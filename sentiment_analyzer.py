@@ -14,11 +14,6 @@ st.markdown(html_temp69, unsafe_allow_html=True)
 
 
 
-
-
-
-st.sidebar.header("ANALYSE DATA AT THE CLICK OF A BUTTON!")
-
 st.sidebar.markdown('<b>ABOUT:</b>', unsafe_allow_html=True)
 
 st.sidebar.markdown("Just enter a sentence or a paragraph whose sentiment you want to identify")
