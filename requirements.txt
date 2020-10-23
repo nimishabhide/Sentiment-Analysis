@@ -1,2 +1,2 @@
 streamlit==0.64.0
-textblob==1.15.0
+textblob==0.15.3
