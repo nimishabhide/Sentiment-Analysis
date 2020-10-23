@@ -23,12 +23,13 @@ st.sidebar.markdown('Email : nbhide.nb@gmail.com')
 import textblob  
 from textblob import TextBlob
 tt=st.text_area("Enter text here")
-edu=TextBlob(tt)
-x=edu.sentiment.polarity
-if(x<0):
-  st.write("NEGATIVE")
-elif(x==0):
-  st.write("NEUTRAL")
-else:
-  st.write("POSITIVE")
+if st.button('Advise'):
+    edu=TextBlob(tt)
+    x=edu.sentiment.polarity
+    if(x<0):
+        st.write("NEGATIVE")
+    elif(x==0):
+        st.write("NEUTRAL")
+    else:
+        st.write("POSITIVE")
 
