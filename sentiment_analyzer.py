@@ -25,7 +25,7 @@ st.sidebar.markdown("Just enter a sentence or a paragraph whose sentiment you wa
 st.sidebar.markdown('<b>CREATED BY:</b>', unsafe_allow_html=True)
 st.sidebar.markdown('Nimisha Bhide')
 st.sidebar.markdown('Email : nbhide.nb@gmail.com')
-  
+import textblob  
 from textblob import TextBlob
 tt=st.text_area("Enter text here")
 edu=TextBlob(tt)
