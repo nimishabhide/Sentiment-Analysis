@@ -1,3 +1,4 @@
+python -m pip install textblob
 import streamlit as st
 html_temp = """
     <div style="background-color:black ;padding:10px">
