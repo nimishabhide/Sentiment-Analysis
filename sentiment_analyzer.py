@@ -38,7 +38,7 @@ if st.button('Advise'):
         t="It is a positive comment"
         st.write("POSITIVE")
     language="en"
-    output=gTTS(text=t,lang=language,slow=True)
+    output=gTTS(text=t,lang=language,slow=False)
     output.save("voice.ogg")
     audio_file = open('voice.ogg', 'rb')
     audio_bytes = audio_file.read()
