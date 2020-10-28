@@ -1,3 +1,5 @@
+from gtts import gTTS
+import os
 import streamlit as st
 html_temp = """
     <div style="background-color:black ;padding:10px">
@@ -27,9 +29,17 @@ if st.button('Advise'):
     edu=TextBlob(tt)
     x=edu.sentiment.polarity
     if(x<0):
+        t="It is a negative comment"
         st.write("NEGATIVE")
     elif(x==0):
+        t="It is a neutral comment"
         st.write("NEUTRAL")
     else:
+        t="It is a positive comment"
         st.write("POSITIVE")
-
+language="en"
+output=gTTS(text=myText,lang=language,slow=True)
+output.save("voice.ogg")
+audio_file = open('voice.ogg', 'rb')
+audio_bytes = audio_file.read()
+st.audio(audio_bytes, format='audio/ogg')
