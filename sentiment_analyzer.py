@@ -18,7 +18,7 @@ st.markdown(html_temp69, unsafe_allow_html=True)
 
 st.sidebar.markdown('<b>ABOUT:</b>', unsafe_allow_html=True)
 
-st.sidebar.markdown("Just enter a sentence or a paragraph whose sentiment you want to identify")
+st.sidebar.markdown("Just enter a sentence or a paragraph whose sentiment you want to analyze")
 st.sidebar.markdown('<b>CREATED BY:</b>', unsafe_allow_html=True)
 st.sidebar.markdown('Saurabh Khanolkar')
 st.sidebar.markdown('Email : saurabh.khanolkar@gmail.com')
