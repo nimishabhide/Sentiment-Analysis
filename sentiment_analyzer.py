@@ -28,12 +28,24 @@ tt=st.text_area("Enter text here")
 if st.button('Predict'):
     edu=TextBlob(tt)
     x=edu.sentiment.polarity
-    if(x<0):
+    if(x>=-0.6 and x<-0.3):
         t="It is a negative comment"
         st.write("NEGATIVE")
+    elif(x>=-0.3 and x<0):
+        t="It is a weakly negative comment"
+        st.write("WEAKLY NEGATIVE")
+    elif(x>=-1 and x<-0.6):
+        t="It is a strongly negative comment"
+        st.write("STRONGLY NEGATIVE")
+    elif(x<=1 and x>0.6):
+        t="It is a strongly positive sentence"
+        st.write("STRONGLY POSITIVE")
     elif(x==0):
         t="It is a neutral comment"
         st.write("NEUTRAL")
+    elif(x>0 and x<=0.3):
+        t="It is a weakly positive sentence"
+        st.write("WEAKLY POSITIVE")
     else:
         t="It is a positive comment"
         st.write("POSITIVE")
