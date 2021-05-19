@@ -20,8 +20,8 @@ st.sidebar.markdown('<b>ABOUT:</b>', unsafe_allow_html=True)
 
 st.sidebar.markdown("Just enter a sentence or a paragraph whose sentiment you want to analyze")
 st.sidebar.markdown('<b>CREATED BY:</b>', unsafe_allow_html=True)
-st.sidebar.markdown('Saurabh Khanolkar')
-st.sidebar.markdown('Email : saurabh.khanolkar@gmail.com')
+st.sidebar.markdown('Nimisha Bhide')
+st.sidebar.markdown('Email : nbhide.nb@gmail.com')
 import textblob  
 from textblob import TextBlob
 tt=st.text_area("Enter text here")
